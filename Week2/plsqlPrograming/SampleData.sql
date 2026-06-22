@@ -1,0 +1,11 @@
+INSERT INTO Customers
+VALUES (1, 'John', TO_DATE('15-05-1960','DD-MM-YYYY'), 15000);
+
+INSERT INTO Customers
+VALUES (2, 'David', TO_DATE('10-10-1995','DD-MM-YYYY'), 5000);
+
+INSERT INTO Accounts
+VALUES (101, 1, 'Savings', 20000);
+
+INSERT INTO Accounts
+VALUES (102, 2, 'Savings', 8000);
