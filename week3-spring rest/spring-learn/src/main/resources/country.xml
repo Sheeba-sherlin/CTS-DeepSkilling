@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- India -->
+    <bean id="country1" class="com.cts.skillLearn.Country">
+        <property name="code" value="IN"/>
+        <property name="name" value="India"/>
+    </bean>
+
+    <!-- USA -->
+    <bean id="country2" class="com.cts.skillLearn.Country">
+        <property name="code" value="US"/>
+        <property name="name" value="United States"/>
+    </bean>
+
+    <!-- Japan -->
+    <bean id="country3" class="com.cts.skillLearn.Country">
+        <property name="code" value="JP"/>
+        <property name="name" value="Japan"/>
+    </bean>
+
+    <!-- Country Service -->
+    <bean id="countryService"
+          class="com.cts.skillLearn.CountryService">
+
+        <property name="countryList">
+            <list>
+                <ref bean="country1"/>
+                <ref bean="country2"/>
+                <ref bean="country3"/>
+            </list>
+        </property>
+
+    </bean>
+
+</beans>
