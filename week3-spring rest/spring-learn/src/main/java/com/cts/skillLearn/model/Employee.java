@@ -3,6 +3,7 @@ package com.cts.skillLearn.model;
 import java.util.Date;
 import java.util.List;
 
+
 public class Employee {
 
     private int id;
@@ -12,6 +13,7 @@ public class Employee {
     private Department department;
     private List<Skill> skill;
     private Date dateOfBirth;
+    
 
     public Employee() {
     }

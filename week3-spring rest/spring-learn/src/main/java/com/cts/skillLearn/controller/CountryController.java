@@ -1,7 +1,7 @@
 package com.cts.skillLearn.controller;
 
 import java.util.List;
-
+import javax.validation.Valid;
 import com.cts.skillLearn.Country;
 import com.cts.skillLearn.CountryService;
 
@@ -14,6 +14,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+
+
 
 @RestController
 public class CountryController {
@@ -47,5 +49,16 @@ public class CountryController {
 
         return country;
     }
+   @PostMapping("/countries")
+public Country addCountry(@RequestBody @Valid Country country) {
+
+    LOGGER.info("START");
+
+    LOGGER.info(country.toString());
+
+    LOGGER.info("END");
+
+    return country;
+}
 
 }

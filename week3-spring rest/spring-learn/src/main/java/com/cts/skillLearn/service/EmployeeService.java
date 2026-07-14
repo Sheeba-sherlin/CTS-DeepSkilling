@@ -21,5 +21,11 @@ public class EmployeeService {
         return employeeDao.getAllEmployees();
 
     }
+    @Transactional
+public void deleteEmployee(int id) {
+
+    employeeDao.deleteEmployee(id);
+
+}
 
 }

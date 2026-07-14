@@ -28,5 +28,11 @@ public class EmployeeDao {
         return EMPLOYEE_LIST;
 
     }
+    @Transactional
+public void deleteEmployee(int id) {
+
+    employeeDao.deleteEmployee(id);
+
+}
 
 }
