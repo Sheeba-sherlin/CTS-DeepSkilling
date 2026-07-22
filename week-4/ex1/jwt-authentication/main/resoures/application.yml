@@ -1,0 +1,6 @@
+server:
+  port: 8082
+
+jwt:
+  secret: mySecretKeyForJwtAuthentication123456789
+  expiration: 3600000
